@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "News Accuracy Checker",
+  "version": "0.1",
+  "description": "Checks headline vs article content and flags suspicious images.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "tabs",
+    "storage"
+  ],
+  "host_permissions": [
+    "http://localhost/*",
+    "http://127.0.0.1/*"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ]
+}

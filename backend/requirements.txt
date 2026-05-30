@@ -1,0 +1,10 @@
+
+Flask
+flask-cors
+requests
+Pillow
+# Optional heavy:
+#sentence-transformers
+#transformers
+# torch
+watchdog
